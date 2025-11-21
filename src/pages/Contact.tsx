@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import LocationCard from "@/components/LocationCard";
+import GoogleMap from "@/components/GoogleMap";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -16,7 +17,9 @@ const Contact = () => {
     name: "",
     phone: "",
     email: "",
-    message: ""
+    machineType: "",
+    issueDescription: "",
+    location: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -25,7 +28,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Validate form
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.message.trim()) {
+    if (!formData.name.trim() || !formData.phone.trim() || !formData.machineType.trim() || !formData.issueDescription.trim() || !formData.location.trim()) {
       toast({
         title: "Validation Error",
         description: "Please fill in all required fields.",
@@ -35,13 +38,22 @@ const Contact = () => {
       return;
     }
 
-    // Create WhatsApp message
+    // Create formatted WhatsApp message
     const message = encodeURIComponent(
-      `New Service Request from Website:\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email || "Not provided"}\n\nMessage:\n${formData.message}`
+      `Request For Service Engineer\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email || "Not provided"}\nMachine Type: ${formData.machineType}\nIssue: ${formData.issueDescription}\nLocation: ${formData.location}\n\nPlease send assistance.`
     );
     
+    // Determine which WhatsApp number to use based on location
+    let whatsappNumber = "919894428729"; // Default: Puducherry
+    if (formData.location.toLowerCase().includes("chennai")) {
+      whatsappNumber = "919500075955";
+    } else if (formData.location.toLowerCase().includes("thanjavur")) {
+      whatsappNumber = "919976888919";
+    }
+    
     // Open WhatsApp
-    window.open(`https://wa.me/919894428729?text=${message}`, '_blank');
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
     
     // Show success message
     toast({
@@ -54,12 +66,14 @@ const Contact = () => {
       name: "",
       phone: "",
       email: "",
-      message: ""
+      machineType: "",
+      issueDescription: "",
+      location: ""
     });
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
@@ -185,14 +199,40 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <Label htmlFor="message">Message *</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
+                    <Label htmlFor="machineType">Machine Type *</Label>
+                    <Input
+                      id="machineType"
+                      name="machineType"
+                      value={formData.machineType}
                       onChange={handleChange}
-                      placeholder="Describe your requirements or issue..."
-                      rows={5}
+                      placeholder="e.g., CAT Loader, JCB Excavator, Forklift"
+                      required
+                      className="mt-2"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="issueDescription">Issue Description *</Label>
+                    <Textarea
+                      id="issueDescription"
+                      name="issueDescription"
+                      value={formData.issueDescription}
+                      onChange={handleChange}
+                      placeholder="Describe the issue or maintenance required..."
+                      rows={4}
+                      required
+                      className="mt-2"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="location">Location *</Label>
+                    <Input
+                      id="location"
+                      name="location"
+                      value={formData.location}
+                      onChange={handleChange}
+                      placeholder="e.g., Chennai, Puducherry, Thanjavur"
                       required
                       className="mt-2"
                     />
@@ -255,17 +295,35 @@ const Contact = () => {
         {/* Map Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d79.38066469999999!3d11.933950099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab4e49cfcf%3A0x73ff601c739cd7d6!2sPuducherry!5e0!3m2!1sen!2sin!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="PG Tractors Locations"
-              ></iframe>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Find Us on Map</h2>
+              <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                Interactive map showing all our store locations across Tamil Nadu
+              </p>
+            </div>
+
+            {/* Google Maps JavaScript API - Advanced Version */}
+            <div className="mb-12">
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Interactive Map (Google Maps API)</h3>
+              <GoogleMap />
+            </div>
+
+            {/* Google Maps Embed - Simple Version */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 text-foreground">Embedded Map (Puducherry Location)</h3>
+              <div className="aspect-video bg-muted rounded-lg overflow-hidden border border-border">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.886539092!2d79.38066469999999!3d11.933950099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab4e49cfcf%3A0x73ff601c739cd7d6!2sPuducherry!5e0!3m2!1sen!2sin!4v1234567890123"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="PG Tractors Puducherry Location"
+                ></iframe>
+              </div>
             </div>
           </div>
         </section>
