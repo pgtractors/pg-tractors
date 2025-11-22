@@ -49,16 +49,8 @@ Location: ${formData.location}
 
 Please send assistance.`;
     
-    // Determine which WhatsApp number to use based on location
-    let whatsappNumber = "919894428729"; // Default: Puducherry
-    if (formData.location.toLowerCase().includes("chennai")) {
-      whatsappNumber = "919500075955";
-    } else if (formData.location.toLowerCase().includes("thanjavur")) {
-      whatsappNumber = "919976888919";
-    }
-    
     // Redirect to WhatsApp with encoded message
-    window.location.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = "https://wa.me/919894428729?text=" + encodeURIComponent(message);
     
     // Show success message
     toast({
