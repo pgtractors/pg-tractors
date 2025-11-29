@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +24,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="bg-gradient-primary p-2 rounded-md">
-              <span className="text-primary-foreground font-bold text-xl">PG</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-xl text-foreground">PG Tractors</span>
-              <span className="text-xs text-muted-foreground">Earthmoving Excellence</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img src={logo} alt="PG Tractors Logo" className="h-16 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
