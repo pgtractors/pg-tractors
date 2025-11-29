@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="PG Tractors Logo" className="h-14 w-auto object-contain" />
+            <img src={logo} alt="PG Tractors Logo" className="h-20 w-auto object-contain" />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-foreground">PG Tractors</span>
               <span className="text-xs text-muted-foreground">Earthmoving Excellence</span>
