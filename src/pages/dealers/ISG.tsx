@@ -8,9 +8,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import isgRange from "@/assets/isg-range.jpg";
 import isgGrx from "@/assets/isg-grx1700-hq.png.asset.json";
 import isgGrb from "@/assets/isg-grb250-300-hq.png.asset.json";
-import isgTools from "@/assets/isg-tools.jpg";
-import isgAugers from "@/assets/isg-augers.jpg";
-import isgAugerSpecs from "@/assets/isg-auger-specs.jpg";
+import isgTools from "@/assets/isg-tools-hq.png.asset.json";
+import isgAugers from "@/assets/isg-augers-hq.png.asset.json";
+import isgAugerSpecs from "@/assets/isg-auger-specs-hq.png.asset.json";
 import eurotecBatching from "@/assets/eurotec-batching.jpg";
 import eurotecPlants from "@/assets/eurotec-plants.jpg";
 
