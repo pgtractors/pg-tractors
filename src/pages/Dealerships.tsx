@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DealerCard from "@/components/DealerCard";
+import { Link } from "react-router-dom";
 
 const Dealerships = () => {
   const dealers = [
@@ -28,6 +29,16 @@ const Dealerships = () => {
     {
       name: "WIPRO",
       products: "Seal kits, hydraulic tubes, and cylinders"
+    },
+    {
+      name: "ISG",
+      products: "InfraServeGlobal - Rock breakers, augers, attachments & Eurotec batching plants",
+      link: "/dealers/isg"
+    },
+    {
+      name: "LINTEC & LINNHOFF",
+      products: "Concrete batching plants and asphalt solutions",
+      link: "/dealers/lintec-linnhoff"
     }
   ];
 
@@ -59,13 +70,19 @@ const Dealerships = () => {
 
             {/* Dealer Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-              {dealers.map((dealer) => (
-                <DealerCard
-                  key={dealer.name}
-                  name={dealer.name}
-                  products={dealer.products}
-                />
-              ))}
+              {dealers.map((dealer) =>
+                dealer.link ? (
+                  <Link key={dealer.name} to={dealer.link} className="block">
+                    <DealerCard name={dealer.name} products={dealer.products} />
+                  </Link>
+                ) : (
+                  <DealerCard
+                    key={dealer.name}
+                    name={dealer.name}
+                    products={dealer.products}
+                  />
+                )
+              )}
             </div>
 
             {/* Detailed Information */}
@@ -128,6 +145,32 @@ const Dealerships = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   Wipro Infrastructure Engineering is a leading manufacturer of hydraulic cylinders, seal kits, and precision-engineered tubes. Their products meet international quality standards and are trusted across industries.
                 </p>
+              </div>
+
+              <div className="bg-muted p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground flex items-center flex-wrap gap-3">
+                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1">ISG</span>
+                  InfraServeGlobal - Rock Breakers &amp; Attachments
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  InfraServeGlobal (ISG) delivers innovative solutions and tougher performance across rock breakers, augers, and earthmoving attachments, plus Eurotec concrete batching plants. PG Tractors is the ISG dealer for Puducherry, Thanjavur, and Chennai.
+                </p>
+                <Link to="/dealers/isg" className="text-primary font-semibold hover:underline">
+                  View ISG range and specifications →
+                </Link>
+              </div>
+
+              <div className="bg-muted p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground flex items-center flex-wrap gap-3">
+                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1">LINTEC &amp; LINNHOFF</span>
+                  Concrete Batching Plants &amp; Asphalt Solutions
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Lintec &amp; Linnhoff is a global manufacturer of asphalt mixing plants, concrete batching plants, and pavement technologies under the Lintec, Linnhoff, and Eurotec brands. PG Tractors is the authorised distributor for Puducherry, Thanjavur, and Chennai.
+                </p>
+                <Link to="/dealers/lintec-linnhoff" className="text-primary font-semibold hover:underline">
+                  View Lintec &amp; Linnhoff solutions →
+                </Link>
               </div>
             </div>
           </div>
