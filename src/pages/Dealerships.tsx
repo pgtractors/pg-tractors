@@ -146,6 +146,32 @@ const Dealerships = () => {
                   Wipro Infrastructure Engineering is a leading manufacturer of hydraulic cylinders, seal kits, and precision-engineered tubes. Their products meet international quality standards and are trusted across industries.
                 </p>
               </div>
+
+              <div className="bg-muted p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground flex items-center flex-wrap gap-3">
+                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1">ISG</span>
+                  InfraServeGlobal - Rock Breakers &amp; Attachments
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  InfraServeGlobal (ISG) delivers innovative solutions and tougher performance across rock breakers, augers, and earthmoving attachments, plus Eurotec concrete batching plants. PG Tractors is the ISG dealer for Puducherry, Thanjavur, and Chennai.
+                </p>
+                <Link to="/dealers/isg" className="text-primary font-semibold hover:underline">
+                  View ISG range and specifications →
+                </Link>
+              </div>
+
+              <div className="bg-muted p-8 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4 text-foreground flex items-center flex-wrap gap-3">
+                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1">LINTEC &amp; LINNHOFF</span>
+                  Concrete Batching Plants &amp; Asphalt Solutions
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Lintec &amp; Linnhoff is a global manufacturer of asphalt mixing plants, concrete batching plants, and pavement technologies under the Lintec, Linnhoff, and Eurotec brands. PG Tractors is the authorised distributor for Puducherry, Thanjavur, and Chennai.
+                </p>
+                <Link to="/dealers/lintec-linnhoff" className="text-primary font-semibold hover:underline">
+                  View Lintec &amp; Linnhoff solutions →
+                </Link>
+              </div>
             </div>
           </div>
         </section>
