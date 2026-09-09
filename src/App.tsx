@@ -8,6 +8,8 @@ import Services from "./pages/Services";
 import Dealerships from "./pages/Dealerships";
 import Infrastructure from "./pages/Infrastructure";
 import Contact from "./pages/Contact";
+import ISG from "./pages/dealers/ISG";
+import LintecLinnhoff from "./pages/dealers/LintecLinnhoff";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +24,8 @@ const App = () => (
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/dealerships" element={<Dealerships />} />
+        <Route path="/dealers/isg" element={<ISG />} />
+        <Route path="/dealers/lintec-linnhoff" element={<LintecLinnhoff />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/contact" element={<Contact />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
