@@ -206,7 +206,7 @@ const ISG = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden hover:shadow-strong transition-all duration-300">
-                <img src={isgGrx} alt="ISG GRX1700 heavy duty hydraulic rock breaker" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={isgGrx.url} alt="ISG GRX1700 heavy duty hydraulic rock breaker" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-1">GRX1700</h3>
                   <p className="text-secondary font-medium mb-4">Heavy Duty Rock Breaker</p>
@@ -218,7 +218,7 @@ const ISG = () => {
               </Card>
 
               <Card className="overflow-hidden hover:shadow-strong transition-all duration-300">
-                <img src={isgGrb} alt="ISG GRB250 and GRB300 light duty hydraulic rock breakers" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={isgGrb.url} alt="ISG GRB250 and GRB300 light duty hydraulic rock breakers" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-1">GRB250 / GRB300</h3>
                   <p className="text-secondary font-medium mb-4">Light Duty Rock Breaker</p>
