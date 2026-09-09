@@ -70,13 +70,19 @@ const Dealerships = () => {
 
             {/* Dealer Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-              {dealers.map((dealer) => (
-                <DealerCard
-                  key={dealer.name}
-                  name={dealer.name}
-                  products={dealer.products}
-                />
-              ))}
+              {dealers.map((dealer) =>
+                dealer.link ? (
+                  <Link key={dealer.name} to={dealer.link} className="block">
+                    <DealerCard name={dealer.name} products={dealer.products} />
+                  </Link>
+                ) : (
+                  <DealerCard
+                    key={dealer.name}
+                    name={dealer.name}
+                    products={dealer.products}
+                  />
+                )
+              )}
             </div>
 
             {/* Detailed Information */}
