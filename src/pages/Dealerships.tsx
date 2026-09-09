@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DealerCard from "@/components/DealerCard";
+import { Link } from "react-router-dom";
 
 const Dealerships = () => {
   const dealers = [
@@ -28,6 +29,16 @@ const Dealerships = () => {
     {
       name: "WIPRO",
       products: "Seal kits, hydraulic tubes, and cylinders"
+    },
+    {
+      name: "ISG",
+      products: "InfraServeGlobal - Rock breakers, augers, attachments & Eurotec batching plants",
+      link: "/dealers/isg"
+    },
+    {
+      name: "LINTEC & LINNHOFF",
+      products: "Concrete batching plants and asphalt solutions",
+      link: "/dealers/lintec-linnhoff"
     }
   ];
 
