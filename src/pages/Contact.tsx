@@ -281,7 +281,7 @@ Please send assistance.`;
               
               <LocationCard
                 city="Chennai"
-                address="No.135, Poonamallee High Road, Velappanchavadi, Chennai – 600 077"
+                address="NO.135, POONAMALLEE HIGH ROAD, VELAPPANCHAVADI, CHENNAI – 600 077"
                 phone="9500075955"
                 email="pgchennai5225@gmail.com"
               />
