@@ -8,9 +8,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import isgRange from "@/assets/isg-range.jpg";
 import isgGrx from "@/assets/isg-grx1700-hq.png.asset.json";
 import isgGrb from "@/assets/isg-grb250-300-hq.png.asset.json";
-import isgTools from "@/assets/isg-tools.jpg";
-import isgAugers from "@/assets/isg-augers.jpg";
-import isgAugerSpecs from "@/assets/isg-auger-specs.jpg";
+import isgTools from "@/assets/isg-tools-hq.png.asset.json";
+import isgAugers from "@/assets/isg-augers-hq.png.asset.json";
+import isgAugerSpecs from "@/assets/isg-auger-specs-hq.png.asset.json";
 import eurotecBatching from "@/assets/eurotec-batching.jpg";
 import eurotecPlants from "@/assets/eurotec-plants.jpg";
 
@@ -248,7 +248,7 @@ const ISG = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-start">
-              <img src={isgAugers} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgAugers.url} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {augerFeatures.map((f) => (
                   <Card key={f.title}>
@@ -269,7 +269,7 @@ const ISG = () => {
               Available hitches: Single Pin Hitch, Double Pin Hitch, Double Pin Cradle Hitch.
             </p>
             <div className="mt-8">
-              <img src={isgAugerSpecs} alt="ISG auger specification and drilling depth chart from the brochure" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgAugerSpecs.url} alt="ISG auger specification and drilling depth chart from the brochure" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
           </div>
         </section>
@@ -299,7 +299,7 @@ const ISG = () => {
               ))}
             </div>
 
-            <img src={isgTools} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+            <img src={isgTools.url} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
           </div>
         </section>
 
