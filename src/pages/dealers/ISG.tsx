@@ -248,7 +248,7 @@ const ISG = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-start">
-              <img src={isgAugers} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgAugers.url} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {augerFeatures.map((f) => (
                   <Card key={f.title}>
