@@ -267,7 +267,7 @@ const ISG = () => {
             <p className="text-sm text-muted-foreground mt-4">
               Available hitches: Single Pin Hitch, Double Pin Hitch, Double Pin Cradle Hitch.
             </p>
-            <div className="mt-8">
+            <div className="max-w-4xl mx-auto mt-8">
               <img src={isgAugerSpecs.url} alt="ISG auger specification and drilling depth chart from the brochure" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
           </div>
