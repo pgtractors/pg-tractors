@@ -298,7 +298,9 @@ const ISG = () => {
               ))}
             </div>
 
-            <img src={isgTools.url} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+            <div className="max-w-4xl mx-auto">
+              <img src={isgTools.url} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+            </div>
           </div>
         </section>
 
