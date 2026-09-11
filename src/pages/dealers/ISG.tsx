@@ -311,9 +311,8 @@ const ISG = () => {
               <p className="text-muted-foreground max-w-2xl mx-auto">Concrete batching plants and asphalt solutions</p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div className="max-w-4xl mx-auto mb-12">
               <img src={eurotecConcrete.url} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
-              <img src={eurotecConcrete.url} alt="Eurotec MZ and SWIFTEC concrete batching plant brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
