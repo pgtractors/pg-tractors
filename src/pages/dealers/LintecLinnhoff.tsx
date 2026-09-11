@@ -40,7 +40,7 @@ const LintecLinnhoff = () => {
                 </p>
               </div>
               <img
-                src={lintec}
+                src={lintec.url}
                 alt="Lintec & Linnhoff concrete batching plant installation"
                 className="w-full h-auto rounded-lg border border-border shadow-card object-contain"
                 loading="lazy"

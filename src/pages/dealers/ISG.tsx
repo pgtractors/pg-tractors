@@ -312,8 +312,8 @@ const ISG = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-              <img src={eurotecBatching} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
-              <img src={eurotecPlants} alt="Eurotec MZ and SWIFTEC concrete batching plant brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={eurotecConcrete.url} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={eurotecConcrete.url} alt="Eurotec MZ and SWIFTEC concrete batching plant brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
