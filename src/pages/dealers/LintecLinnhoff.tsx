@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
 import eurotecBatching from "@/assets/ISGconcrete1.png.asset.json";
+import mzSpecs from "@/assets/tech_specs.png.asset.json";
+import swiftecSpecs from "@/assets/swiftec_specs.png.asset.json";
 
 const LintecLinnhoff = () => {
   return (
