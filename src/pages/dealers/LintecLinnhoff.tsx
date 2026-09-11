@@ -6,7 +6,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
-import eurotecBatching from "@/assets/eurotec-batching.jpg";
+import eurotecBatching from "@/assets/ISGconcrete1.png.asset.json";
 
 const LintecLinnhoff = () => {
   return (
@@ -58,7 +58,7 @@ const LintecLinnhoff = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               <Card className="overflow-hidden">
-                <img src={eurotecBatching} alt="Eurotec concrete batching plant supplied under the Lintec & Linnhoff group of brands" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={eurotecBatching.url} alt="Eurotec concrete batching plant supplied under the Lintec & Linnhoff group of brands" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">Concrete Batching Plants</h3>
                   <p className="text-muted-foreground text-sm">
