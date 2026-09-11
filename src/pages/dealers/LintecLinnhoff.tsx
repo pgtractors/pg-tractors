@@ -82,6 +82,27 @@ const LintecLinnhoff = () => {
                 </CardContent>
               </Card>
             </div>
+
+            <div className="mt-16">
+              <div className="text-center mb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground">Technical Specification (MZ &amp; SWIFTEC)</h3>
+                <div className="w-20 h-1 bg-secondary mx-auto mt-4"></div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <img
+                  src={mzSpecs.url}
+                  alt="Eurotec MZ series concrete batching plant technical specifications"
+                  className="w-full h-auto rounded-lg border border-border shadow-card object-contain bg-card"
+                  loading="lazy"
+                />
+                <img
+                  src={swiftecSpecs.url}
+                  alt="Eurotec SWIFTEC concrete batching plant technical specifications"
+                  className="w-full h-auto rounded-lg border border-border shadow-card object-contain bg-card"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
