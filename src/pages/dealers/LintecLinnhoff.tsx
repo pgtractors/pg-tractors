@@ -6,7 +6,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
-import eurotecBatching from "@/assets/eurotec-batching.jpg";
+import eurotecBatching from "@/assets/ISGconcrete1.png.asset.json";
 
 const LintecLinnhoff = () => {
   return (
