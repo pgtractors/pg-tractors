@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import lintec from "@/assets/lintec-linnhoff.jpg";
+import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
 import eurotecBatching from "@/assets/eurotec-batching.jpg";
 
 const LintecLinnhoff = () => {
@@ -40,7 +40,7 @@ const LintecLinnhoff = () => {
                 </p>
               </div>
               <img
-                src={lintec}
+                src={lintec.url}
                 alt="Lintec & Linnhoff concrete batching plant installation"
                 className="w-full h-auto rounded-lg border border-border shadow-card object-contain"
                 loading="lazy"

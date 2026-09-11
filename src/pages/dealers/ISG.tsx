@@ -11,8 +11,7 @@ import isgGrb from "@/assets/isg-grb250-300-hq.png.asset.json";
 import isgTools from "@/assets/isg-tools-hq.png.asset.json";
 import isgAugers from "@/assets/isg-augers-hq.png.asset.json";
 import isgAugerSpecs from "@/assets/isg-auger-specs-hq.png.asset.json";
-import eurotecBatching from "@/assets/eurotec-batching.jpg";
-import eurotecPlants from "@/assets/eurotec-plants.jpg";
+import eurotecConcrete from "@/assets/isg-eurotec-concrete-hq.png.asset.json";
 
 const categories = [
   "Rock Breakers",
@@ -313,8 +312,8 @@ const ISG = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-              <img src={eurotecBatching} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
-              <img src={eurotecPlants} alt="Eurotec MZ and SWIFTEC concrete batching plant brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={eurotecConcrete.url} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={eurotecConcrete.url} alt="Eurotec MZ and SWIFTEC concrete batching plant brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
