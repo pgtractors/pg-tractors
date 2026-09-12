@@ -5,10 +5,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
-import eurotecBatching from "@/assets/ISGconcrete1.png.asset.json";
-import mzSpecs from "@/assets/tech_specs.png.asset.json";
-import swiftecSpecs from "@/assets/swiftec_specs.png.asset.json";
+import lintec from "@/assets/lintec-linnhoff-hq.png";
+import eurotecBatching from "@/assets/ISGconcrete1.png";
+import mzSpecs from "@/assets/tech_specs.png";
+import swiftecSpecs from "@/assets/swiftec_specs.png";
 
 const LintecLinnhoff = () => {
   return (
