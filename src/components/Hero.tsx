@@ -9,7 +9,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImageAsset.url} 
+          src={heroImageAsset} 
           alt="PG Tractors heavy equipment solutions" 
           className="w-full h-full object-cover object-center"
         />

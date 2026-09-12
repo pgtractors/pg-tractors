@@ -205,7 +205,7 @@ const ISG = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden hover:shadow-strong transition-all duration-300">
-                <img src={isgGrx.url} alt="ISG GRX1700 heavy duty hydraulic rock breaker" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={isgGrx} alt="ISG GRX1700 heavy duty hydraulic rock breaker" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-1">GRX1700</h3>
                   <p className="text-secondary font-medium mb-4">Heavy Duty Rock Breaker</p>
@@ -217,7 +217,7 @@ const ISG = () => {
               </Card>
 
               <Card className="overflow-hidden hover:shadow-strong transition-all duration-300">
-                <img src={isgGrb.url} alt="ISG GRB250 and GRB300 light duty hydraulic rock breakers" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={isgGrb} alt="ISG GRB250 and GRB300 light duty hydraulic rock breakers" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-1">GRB250 / GRB300</h3>
                   <p className="text-secondary font-medium mb-4">Light Duty Rock Breaker</p>
@@ -247,7 +247,7 @@ const ISG = () => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-start">
-              <img src={isgAugers.url} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgAugers} alt="ISG augers innovation and special features brochure page" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {augerFeatures.map((f) => (
                   <Card key={f.title}>
@@ -268,7 +268,7 @@ const ISG = () => {
               Available hitches: Single Pin Hitch, Double Pin Hitch, Double Pin Cradle Hitch.
             </p>
             <div className="max-w-4xl mx-auto mt-8">
-              <img src={isgAugerSpecs.url} alt="ISG auger specification and drilling depth chart from the brochure" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgAugerSpecs} alt="ISG auger specification and drilling depth chart from the brochure" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
           </div>
         </section>
@@ -299,7 +299,7 @@ const ISG = () => {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <img src={isgTools.url} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={isgTools} alt="ISG breaker tool range including blunt tool, pyramid tool, chisel, moil point, pile driver, wood cutter and asphalt cutter" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
           </div>
         </section>
@@ -314,7 +314,7 @@ const ISG = () => {
             </div>
 
             <div className="max-w-4xl mx-auto mb-12">
-              <img src={eurotecConcrete.url} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
+              <img src={eurotecConcrete} alt="Eurotec by InfraServeGlobal concrete batching plant" className="w-full h-auto rounded-lg border border-border object-contain" loading="lazy" />
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
