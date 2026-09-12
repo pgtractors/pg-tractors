@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Phone, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-machinery.jpg";
+import heroImageAsset from "@/assets/pg-tractors-heavy-equipment-hero.png.asset.json";
 
 const Hero = () => {
   return (
@@ -9,9 +9,9 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
-          alt="Heavy earthmoving machinery" 
-          className="w-full h-full object-cover"
+          src={heroImageAsset.url} 
+          alt="PG Tractors heavy equipment solutions" 
+          className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/95 via-foreground/85 to-foreground/60"></div>
       </div>
