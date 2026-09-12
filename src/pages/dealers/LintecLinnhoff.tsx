@@ -5,10 +5,10 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import lintec from "@/assets/lintec-linnhoff-hq.png.asset.json";
-import eurotecBatching from "@/assets/ISGconcrete1.png.asset.json";
-import mzSpecs from "@/assets/tech_specs.png.asset.json";
-import swiftecSpecs from "@/assets/swiftec_specs.png.asset.json";
+import lintec from "@/assets/lintec-linnhoff-hq.png";
+import eurotecBatching from "@/assets/ISGconcrete1.png";
+import mzSpecs from "@/assets/tech_specs.png";
+import swiftecSpecs from "@/assets/swiftec_specs.png";
 
 const LintecLinnhoff = () => {
   return (
@@ -42,7 +42,7 @@ const LintecLinnhoff = () => {
                 </p>
               </div>
               <img
-                src={lintec.url}
+                src={lintec}
                 alt="Lintec & Linnhoff concrete batching plant installation"
                 className="w-full h-auto rounded-lg border border-border shadow-card object-contain"
                 loading="lazy"
@@ -60,7 +60,7 @@ const LintecLinnhoff = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
               <Card className="overflow-hidden">
-                <img src={eurotecBatching.url} alt="Eurotec concrete batching plant supplied under the Lintec & Linnhoff group of brands" className="w-full h-auto object-contain bg-card" loading="lazy" />
+                <img src={eurotecBatching} alt="Eurotec concrete batching plant supplied under the Lintec & Linnhoff group of brands" className="w-full h-auto object-contain bg-card" loading="lazy" />
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-2">Concrete Batching Plants</h3>
                   <p className="text-muted-foreground text-sm">
@@ -90,13 +90,13 @@ const LintecLinnhoff = () => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                 <img
-                  src={mzSpecs.url}
+                  src={mzSpecs}
                   alt="Eurotec MZ series concrete batching plant technical specifications"
                   className="w-full h-auto rounded-lg border border-border shadow-card object-contain bg-card"
                   loading="lazy"
                 />
                 <img
-                  src={swiftecSpecs.url}
+                  src={swiftecSpecs}
                   alt="Eurotec SWIFTEC concrete batching plant technical specifications"
                   className="w-full h-auto rounded-lg border border-border shadow-card object-contain bg-card"
                   loading="lazy"
