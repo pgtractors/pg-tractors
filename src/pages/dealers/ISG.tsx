@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import isgRange from "@/assets/isg-range.jpg";
+
 import isgGrx from "@/assets/isg-grx1700-hq.png";
 import isgGrb from "@/assets/isg-grb250-300-hq.png";
 import isgTools from "@/assets/isg-tools-hq.png";
@@ -164,33 +164,27 @@ const ISG = () => {
         {/* Brand intro */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-              <div>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-10">
                 <h2 className="text-3xl font-bold mb-4 text-foreground">Our Premium Range</h2>
-                <div className="w-20 h-1 bg-secondary mb-6"></div>
-                <p className="text-muted-foreground leading-relaxed mb-6">
+                <div className="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed">
                   PG Tractors is a dealer for ISG (InfraServeGlobal), offering sales, service and spares across Puducherry, Thanjavur and Chennai.
                 </p>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
-                  {premiumRange.map((p) => (
-                    <div key={p} className="bg-muted rounded-lg px-4 py-3 text-sm font-medium text-foreground text-center">
-                      {p}
-                    </div>
-                  ))}
-                </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>Built tough for long life</li>
-                  <li>Advanced technology</li>
-                  <li>Maximum productivity, reliable support</li>
-                  <li>Cost effective solutions</li>
-                </ul>
               </div>
-              <img
-                src={isgRange}
-                alt="PG Tractors ISG InfraServeGlobal premium range of augers, breakers, drum cutters, slurry champ, sweepers and mulchers"
-                className="w-full h-auto rounded-lg border border-border shadow-card object-contain"
-                loading="lazy"
-              />
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-8">
+                {premiumRange.map((p) => (
+                  <div key={p} className="bg-muted rounded-lg px-4 py-3 text-sm font-medium text-foreground text-center">
+                    {p}
+                  </div>
+                ))}
+              </div>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-muted-foreground">
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Built tough for long life</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Advanced technology</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Maximum productivity, reliable support</li>
+                <li className="flex items-center gap-2"><span className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></span>Cost effective solutions</li>
+              </ul>
             </div>
           </div>
         </section>
