@@ -5,7 +5,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import isgRange from "@/assets/isg-range.jpg";
+
 import isgGrx from "@/assets/isg-grx1700-hq.png";
 import isgGrb from "@/assets/isg-grb250-300-hq.png";
 import isgTools from "@/assets/isg-tools-hq.png";
