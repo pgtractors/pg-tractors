@@ -106,7 +106,7 @@ const About = () => {
                 <div className="inline-flex p-4 bg-secondary/10 rounded-full mb-4">
                   <Users className="h-8 w-8 text-secondary" />
                 </div>
-                <div className="text-4xl font-bold text-secondary mb-2">35+</div>
+                <div className="text-4xl font-bold text-secondary mb-2">25+</div>
                 <div className="text-sm text-muted-foreground">Expert Team Members</div>
               </div>
               
