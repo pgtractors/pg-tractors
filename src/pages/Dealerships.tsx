@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DealerCard from "@/components/DealerCard";
 import parkerLogo from "@/assets/parker-logo.jpg";
+import diamondGetLogo from "@/assets/diamond-get-logo.jpg";
 import { Link } from "react-router-dom";
 
 const Dealerships = () => {
@@ -14,7 +15,8 @@ const Dealerships = () => {
     },
     {
       name: "DIAMOND GET",
-      products: "Specialized earthmoving machinery tools"
+      products: "Specialized earthmoving machinery tools",
+      logo: diamondGetLogo
     },
     {
       name: "EMEROLD",
