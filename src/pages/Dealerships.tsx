@@ -2,13 +2,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import DealerCard from "@/components/DealerCard";
+import parkerLogo from "@/assets/parker-logo.jpg";
 import { Link } from "react-router-dom";
 
 const Dealerships = () => {
   const dealers = [
     {
       name: "PARKER",
-      products: "Hydraulic pumps, hoses, and fluid connectors"
+      products: "Hydraulic pumps, hoses, and fluid connectors",
+      logo: parkerLogo
     },
     {
       name: "DIAMOND GET",
@@ -73,13 +75,14 @@ const Dealerships = () => {
               {dealers.map((dealer) =>
                 dealer.link ? (
                   <Link key={dealer.name} to={dealer.link} className="block">
-                    <DealerCard name={dealer.name} products={dealer.products} />
+                    <DealerCard name={dealer.name} products={dealer.products} logo={dealer.logo} />
                   </Link>
                 ) : (
                   <DealerCard
                     key={dealer.name}
                     name={dealer.name}
                     products={dealer.products}
+                    logo={dealer.logo}
                   />
                 )
               )}
