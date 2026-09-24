@@ -4,6 +4,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import DealerCard from "@/components/DealerCard";
 import parkerLogo from "@/assets/parker-logo.jpg";
 import diamondGetLogo from "@/assets/diamond-get-logo.jpg";
+import emeraldLogo from "@/assets/emerald-logo.jpg";
 import { Link } from "react-router-dom";
 
 const Dealerships = () => {
@@ -19,8 +20,9 @@ const Dealerships = () => {
       logo: diamondGetLogo
     },
     {
-      name: "EMEROLD",
-      products: "Pneumatic and solid tyres for heavy equipment"
+      name: "EMERALD",
+      products: "Pneumatic and solid tyres for heavy equipment",
+      logo: emeraldLogo
     },
     {
       name: "NPL",
@@ -114,11 +116,11 @@ const Dealerships = () => {
 
               <div className="bg-muted p-8 rounded-lg">
                 <h3 className="text-2xl font-bold mb-4 text-foreground flex items-center">
-                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1 mr-3">EMEROLD</span>
+                  <span className="bg-primary/10 text-primary rounded-lg px-3 py-1 mr-3">EMERALD</span>
                   Premium Tyres
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Emerold provides high-quality pneumatic and solid tyres engineered for extreme conditions and heavy loads. Their products offer superior durability, traction, and performance for all types of earthmoving equipment.
+                  Emerald provides high-quality pneumatic and solid tyres engineered for extreme conditions and heavy loads. Their products offer superior durability, traction, and performance for all types of earthmoving equipment.
                 </p>
               </div>
 
