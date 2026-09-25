@@ -8,6 +8,8 @@ import emeraldLogo from "@/assets/emerald-logo.jpg";
 import nplLogo from "@/assets/npl-logo.jpg";
 import simpsonLogo from "@/assets/simpson-logo.jpg";
 import wiproLogo from "@/assets/wipro-logo.jpg";
+import isgLogo from "@/assets/isg-logo.jpg";
+import lintecLinnhoffLogo from "@/assets/lintec-linnhoff-logo.jpg";
 import { Link } from "react-router-dom";
 
 const Dealerships = () => {
@@ -45,12 +47,14 @@ const Dealerships = () => {
     {
       name: "ISG",
       products: "InfraServeGlobal - Rock breakers, augers, attachments & Eurotec batching plants",
-      link: "/dealers/isg"
+      link: "/dealers/isg",
+      logo: isgLogo
     },
     {
       name: "LINTEC & LINNHOFF",
       products: "Concrete batching plants and asphalt solutions",
-      link: "/dealers/lintec-linnhoff"
+      link: "/dealers/lintec-linnhoff",
+      logo: lintecLinnhoffLogo
     }
   ];
 
