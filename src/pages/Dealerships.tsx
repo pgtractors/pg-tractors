@@ -5,6 +5,9 @@ import DealerCard from "@/components/DealerCard";
 import parkerLogo from "@/assets/parker-logo.jpg";
 import diamondGetLogo from "@/assets/diamond-get-logo.jpg";
 import emeraldLogo from "@/assets/emerald-logo.jpg";
+import nplLogo from "@/assets/npl-logo.jpg";
+import simpsonLogo from "@/assets/simpson-logo.jpg";
+import wiproLogo from "@/assets/wipro-logo.jpg";
 import { Link } from "react-router-dom";
 
 const Dealerships = () => {
@@ -26,15 +29,18 @@ const Dealerships = () => {
     },
     {
       name: "NPL",
-      products: "Nandan Petrochemical Ltd. - Industrial lubricants"
+      products: "Nandan Petrochemical Ltd. - Industrial lubricants",
+      logo: nplLogo
     },
     {
       name: "SIMPSON",
-      products: "Engine spare parts and components"
+      products: "Engine spare parts and components",
+      logo: simpsonLogo
     },
     {
       name: "WIPRO",
-      products: "Seal kits, hydraulic tubes, and cylinders"
+      products: "Seal kits, hydraulic tubes, and cylinders",
+      logo: wiproLogo
     },
     {
       name: "ISG",
